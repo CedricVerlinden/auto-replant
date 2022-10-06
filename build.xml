@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<project name="AutoReplant" default="Build">
+    <target name="Build">
+        <!--<jar jarfile="C:/Server 1.8.8/plugins/${ant.project.name}.jar" basedir="./target/classes/"
+             includes="**/*"/>-->
+
+        <jar jarfile="C:/Server latest/plugins/${ant.project.name}.jar" basedir="./target/classes/"
+             includes="**/*"/>
+    </target>
+</project>

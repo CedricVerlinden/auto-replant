@@ -1,0 +1,35 @@
+main: ${main.class}
+name: ${project.name}
+version: ${project.version}
+
+description: Auto replant crops.
+api-version: 1.13
+load: POSTWORLD
+author: ${author}
+
+website: github.com/CedricVerlinden
+depend: [ ]
+
+# PERMISSIONS REGISTRATION
+
+permissions:
+  autoreplant.crop.all:
+    description: Allows you to replant every crop.
+    default: op
+    children:
+      autoreplant.crop.wheat: true
+      autoreplant.crop.beetroots: true
+      autoreplant.crop.carrots: true
+      autoreplant.crop.potatoes: true
+  autoreplant.crop.wheat:
+    description: Allows you to replant the wheat crop.
+    default: op
+  autoreplant.crop.beetroots:
+    description: Allows you to replant the beetroots crop.
+    default: op
+  autoreplant.crop.carrots:
+    description: Allows you to replant the carrots crop.
+    default: op
+  autoreplant.crop.potatoes:
+    description: Allows you to replant the potatoes crop.
+    default: op
